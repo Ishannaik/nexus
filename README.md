@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏦 Nexus Banking App
 
-## Getting Started
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-First, run the development server:
+A modern banking application built with Next.js, featuring authentication, money transfers, and transaction tracking.
 
+✨ **Features**
+
+- 🔐 **Secure Authentication** with NextAuth.js
+- 💸 **Money Transfer** functionality
+- 📊 **Transaction History** tracking
+- 💳 **Account Balance** management
+- 🎨 **Beautiful UI** with Tailwind CSS
+- 🚀 **Blazing Fast** performance
+- 🔒 **End-to-End Encryption**
+- 📱 **Mobile-Friendly** design
+
+## 🚀 Getting Started
+
+### 📋 Prerequisites
+
+- Node.js 18+
+- npm 9+
+- PostgreSQL database
+
+### ⚙️ Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-repo/nexus-banking.git
+cd nexus-banking
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Set up environment variables
+```bash
+cp example.env .env
+# Edit .env with your actual values
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run database migrations
+```bash
+npx prisma migrate dev
+```
 
-## Learn More
+5. Start the development server
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 🔑 Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+See `example.env` for required environment variables.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ▶️ Running the Project
 
-## Deploy on Vercel
+- Development: `npm run dev`
+- Production build: `npm run build`
+- Start production server: `npm run start`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Prisma ORM
+- NextAuth.js
+- React Hook Form
+- Zod validation
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📄 License
+
+[MIT](https://choosealicense.com/licenses/mit/)
